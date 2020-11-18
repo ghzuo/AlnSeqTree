@@ -26,7 +26,7 @@ int main(int argc, char *argv[]) {
 
   // init domains
   Mdist dm;
-  dm.init(seqs.names);
+  dm.init(seqs.names, false);
   dm.assign(myargs.refdm);
   theInfo(dm.info());
 

@@ -24,7 +24,7 @@ int main(int argc, char *argv[]) {
 
   // init the distance matrix by species list
   Mdist dm;
-  dm.init(as.names);
+  dm.init(as.names, false);
 
   // assign the dm by reference DMs
   dm.assign(myargs.refdm);

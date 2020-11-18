@@ -33,13 +33,6 @@ size_t AlnSeq::readFasta(string &file) {
   }
   infile.close();
 
-  // check the name
-  for (auto &s : names) {
-    transform(
-        s.begin(), s.end(), s.begin(),
-        [](unsigned char c) -> unsigned char { return c == '/' ? '_' : c; });
-  }
-
   // check the sequence
   for (auto &s : seqs) {
     if (s.size() == 0) {
