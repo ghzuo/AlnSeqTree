@@ -1,0 +1,9 @@
+build
+CMakeLists.txt.user
+.vscode
+.vstags
+cache
+example/
+!exmaple/faa/
+!exmaple/list
+SourceTrail/
